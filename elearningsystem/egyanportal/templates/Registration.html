@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+  {% block main %}  
+{% for mess in messages %}
+<div class="container">
+    <div class="row p-4 mt-4 mb-0">
+        <div class="alert alert-success" role="alert">
+            {{mess}}
+          </div>
+    </div>
+</div>
+{% endfor %}
+  <div class="row ">
+<div class="col-sm-12" style="background-image:linear-gradient(rgba(0, 0, 0, 0.696),rgba(0, 0, 0, 0.74)), url(../static/img/img4.jpg); height: 300px; background-repeat: no-repeat; background-size: cover;"><h1 style="margin-top:110px; margin-left: 50px; color:white;">Registration page</h1>
+
+    <h6 style="margin-left: 52px; margin-top: 15px;"><a href="" style="text-decoration:none; color:white">Registration / </a><a href=""  style="text-decoration:none; color:white">Home</a></h6>
+    </div>
+  </div>
+
+  <div class="row mt-1  border">
+<form action="{% url 'save' %}" method="post" >
+    {% csrf_token %}
+<div class="row m-5 p-4 border shadow-lg " style="background-color: white; box-shadow:black;">
+<div class="col-md-6 mt-3 " >
+    <h6>Enter your Enrollment Number <span style="color:red">*</span></h6>
+    <input type="text" name="enrollmentno"  class="form-control rounded-0 border-dark" placeholder="Enter your Enrollment Number" required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Name <span style="color:red">*</span></h6>
+    <input type="text" name="name"  class="form-control rounded-0 border-dark" placeholder="Enter your Name" required>
+</div>
+
+<div class="col-md-6 mt-3">
+    <h6>Enter Your Father Name <span style="color:red">*</span></h6>
+    <input type="text" name="fname"  class="form-control rounded-0 border-dark" placeholder="Father's Name" required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Mother's Name <span style="color:red">*</span></h6>
+    <input type="text" name="mname"  class="form-control rounded-0 border-dark" placeholder="Mother's Name" required>
+</div>
+
+
+<div class="col-md-6 mt-4">
+    <h6>Enter your Gender <span style="color:red">*</span></h6>
+    Male&nbsp;<input type="radio" name="Gender" value="male">
+    Female&nbsp;<input type="radio" name="Gender" value="female" >
+    Other&nbsp;<input type="radio" name="Gender" value="other">
+    
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Address <span style="color:red">*</span></h6>
+    <input type="text" name="address"  class="form-control rounded-0 border-dark" placeholder="Your address" required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your course <span style="color:red">*</span></h6>
+    <input type="input" name="course"  class="form-control rounded-0 border-dark" placeholder="Your course" required>
+</div>
+
+<div class="col-md-6 mt-3">
+    <h6>Enter your Branch <span style="color:red">*</span></h6>
+    <input type="input" name="branch"  class="form-control rounded-0 border-dark" placeholder="Your branch" required>
+</div>
+
+<div class="col-md-6 mt-3">
+    <h6>Enter your year <span style="color:red">*</span></h6>
+    <input type="input" name="year"  class="form-control rounded-0 border-dark" placeholder="Your year" required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Contact Number <span style="color:red">*</span></h6>
+    <input type="number" name="mobile"  class="form-control rounded-0 border-dark" placeholder="Your Number" required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Email <span style="color:red">*</span></h6>
+    <input type="Email" name="email"  class="form-control rounded-0 border-dark" placeholder="Your Email " required>
+</div>
+<div class="col-md-6 mt-3">
+    <h6>Enter your Password <span style="color:red">*</span></h6>
+    <input type="password" name="password"  class="form-control rounded-0 border-dark" placeholder="Your password " required>
+</div>
+<div class="col-md-12 mt-4" style="background-color: darkred;">
+    
+    <input type="submit" class="w-100" style="background-color: darkred;">
+</div>
+
+</div>
+
+
+
+</form>
+
+
+</div>
+
+  
+  {% endblock %}
+</body>
+</html>

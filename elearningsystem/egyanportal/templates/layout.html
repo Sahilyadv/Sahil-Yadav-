@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {% load static %}
+  <head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to :: {% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <style>
+.box{
+    height:100px;
+    width:100%; 
+    display:flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+
+  }
+
+
+  .b1{
+    
+    height: 75px;
+    width:  450px;
+    border:1px solid ;
+    background-color: darkred;
+   
+  
+  }
+
+
+</style>
+
+  </head>
+
+  <body style="font-family:Poppins, sans-serif">
+    <!--this is container start-->
+    <div class="container-fluid">
+      <!--this is headline start-->
+      <div class="row text-light p-3 pt-3" style="background-color: darkred;">
+        <div class="col-sm-6 text-start">
+          <span><i class="fa-solid fa-phone fa-bounce"></i>+91 7080102007</span>
+          &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <span><i
+              class="fa-solid fa-envelope fa-shake">&nbsp;</i>nouegyanhelp@gmail.com</span>
+
+        </div>
+        <div class="col-sm-6 text-end"><span id="i1">
+          </span>
+        </div>
+
+      </div>
+
+      <!--this is headline end-->
+      <!--this is headline2 START-->
+      <div class="row p-3 "
+        style="background-color: darkred; color:white; border:2px dotted gold;">
+        <div class="col-sm-12 text-center my-auto"><p class="my-auto">For
+            Admission and Examination related query, Kindly call on University
+            helpline Numbers 9341508580,9341508577,0612-2201013 & 0612-2206916
+
+          </p></div>
+      </div>
+      <!--this is headline2 end-->
+      <!--header start-->
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-1 ">
+            <img class="w-100" src="{% static 'img/logo1.png' %}" alt>
+          </div>
+          <div class="col-md-4 ">
+            <h4 calss="my-auto fw-bold" style="color:darkred;">NOU e-Gyan
+              PORTAL</h4>
+            <p>(A Concept by Nalanda Open University)</p>
+          </div>
+          <div class="col-md-7 text-end">
+            <span
+              style="border:1px solid #0041b3; border-radius: 100%; padding:5px;"><i
+                class="fa-brands fa-facebook"
+                style="color: #0041b3;"></i></span>
+            <span
+              style="border:1px solid #74C0FC; border-radius: 100%; padding:5px;"><i
+                class="fa-brands fa-twitter" style="color: #74C0FC;"></i></span>
+            <span
+              style="border:1px solid #e832f5; border-radius: 100%; padding:5px;"><i
+                class="fa-brands fa-instagram"
+                style="color: #e832f5;"></i></span>
+            <span
+              style="border:1px solid #03358c; border-radius: 100%; padding:5px;"><i
+                class="fa-brands fa-linkedin"
+                style="color: #03358c;"></i></span>
+            <span
+              style="border:1px solid #d30d2b; border-radius: 100%; padding:5px;"><i
+                class="fa-brands fa-youtube" style="color: #d30d2b;"></i></span>
+          </div>
+        </div>
+      </div>
+      <!--header start-->
+      <!--navbar start-->
+      <div class="row my-auto p-3"
+        style="background-color: rgb(128, 128, 128,0.8) ;">
+        <div class="col-md-6 text-center my-auto">
+
+          <span class="fs-4 fw-bold" style="color:white;"> WELCOME </span>
+          <span class="fs-4 fw-bold" style="color:gold;">STUDENTS</span>
+        </div>
+        <div class="col-md-6">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href>&nbsp;Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'About' %}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Reg' %}">Registration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}"><i
+                      class="fa-solid fa-phone fa-spin"></i>&nbsp;&nbsp;contact</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-spin fa fa-key"></i>&nbsp;&nbsp;login
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"
+                        href="{% url 'homelogin' %}">Student login </a></li>
+                    <li><a class="dropdown-item" href="#">university
+                        login</a></li>
+                    <li><a class="dropdown-item" href="#">Student login</a></li>
+                  </ul>
+                </li>
+
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      {% block main %}
+
+      {% endblock %}
+      <!--navbar end-->
+
+    </div>
+
+    <!--user of the portal ends-->
+    <!--this is container end-->
+    <!--footer start-->
+    <div class="container-fluid mt-3 px-0" style="background-color: darkred; ">
+      <div class="row ">
+
+        <div class="col-md-12 ">
+          <div class="container p-0">
+            <div class="row text-center">
+              <div class="col-sm-3 mt-5">
+                <img src="{% static 'img/logo1.png' %}"
+                  style="background-color: white; border:5px solid orange; border-radius: 100%;"
+                  alt height="120px" width="120px">
+                <p style="color:white;" class=" mt-2">Nalanda Open University is a State Open University duly
+                  established under the Act of Bihar Government and is also
+                  recognized by Distance Education Council, IGNOU, Maidan Garhi,
+                  New Delhi.</p>
+                  <div class="p pb-4 p-2">
+
+                  
+                  <span style="border:1px solid; border-radius: 100%; padding:5px; background-color: orange;"><i
+                class="fa-brands fa-facebook"
+                style="color: white;"></i></span>
+            <span
+              style="border:1px solid ; border-radius: 100%; padding:5px; background-color: orange;"><i
+                class="fa-brands fa-twitter" style="color: white"></i></span>
+            <span
+              style="border:1px solid; border-radius: 100%; padding:5px; background-color: orange;"><i
+                class="fa-brands fa-instagram"
+                style="color:white"></i></span>
+            <span
+              style="border:1px solid; border-radius: 100%; padding:5px; background-color: orange;"><i
+                class="fa-brands fa-linkedin"
+                style="color: white;"></i></span>
+            <span
+              style="border:1px solid; border-radius: 100%; padding:5px; background-color: orange;"><i
+                class="fa-brands fa-youtube" style="color: white;"></i></span>
+              </div>
+              </div>
+              <div class="col-sm-3">
+            <h2 style="color:white;margin-top: 70px; margin-bottom: 60px;" class="border-bottom border-4 border-$range-700"> Useful Links</h2>
+              
+            <ul style="list-style-type:none; " class="text-start">
+              <li >
+              <a href="#" style="text-decoration: none; color:white; " > ➜ Home</a>
+              </li>
+              <li>
+              <a href="#" style="text-decoration: none; color:white; "> ➜ About Portal</a>
+              </li>
+              <li>
+              <a href="#" style="text-decoration: none; color:white; "> ➜ Services</a>
+              </li>
+              <li>
+              <a href="#" style="text-decoration: none; color:white; "> ➜ Contact us</a>
+              </li>
+              <li>
+              <a href="#" style="text-decoration: none; color:white; "> ➜ Courses</a>
+              </li>
+              <li>
+              <a href="#" style="text-decoration: none; color:white; "> ➜ Study Centre</a>
+              </li>
+              </ul>
+
+
+
+              </div>
+              <div class="col-sm-3"><h2 style="color:white;margin-top: 70px; margin-bottom: 60px;" class="border-bottom border-4 border-$range-700"> Contact Info</h2>
+                <h4 style="color:white;"><i class="fa-solid fa-location-dot" style="color: #fafcff;"></i> NOU</h4>
+                <h6 style="color:white;">2nd/3rd Floor, Biscomaun Bhawan, Gandhi Maidan, Patna 800 001 (BIHAR).
+
+                </h6>
+                <h5 style="color:white;"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>+91 7080102007</h5>
+                <p style="color:white;" class="fw-bold">Give us a call</p>
+             
+
+
+              </div>
+              <div class="col-sm-3"><div class="col-sm-3"><h2 style="color:white;margin-top: 70px; margin-bottom: 60px;" class="border-bottom border-4 border-$range-700">Subscribe</h2></div>
+             <p style="color:white;" >Fill the detail below to receive the manual of the NOU e-Gyan Portal</p>
+             <input type="email" class="p-2 rounded-5 border-0 bg-dark" placeholder="Email address" style="color:white;">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!--footer ends-->
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script>
+   document.getElementById('i1').innerHTML=Date();
+
+    </script>
+  </body>
+</html>

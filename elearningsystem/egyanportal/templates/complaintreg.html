@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block student %}
+
+    <h1 class="text-center fw-bold mt-5">Give Your Complaint Here</h1>
+     {% for i in dy %}
+     <form action="{% url 'complaintsave' i.id %}" method="post" class="m-3 border border-lg bg-light">
+     {% csrf_token %}
+     
+    
+<div class="row  p-4">
+
+<div class="col-sm-12 mt-4">
+    Enter subjects
+    <input type="text" class="form-control border-dark rounded-0 mt-3"></div>
+
+   
+    <div class="col-sm-12 mt-4">
+        Enter Response Text
+        <input type="text" class="form-control border-dark rounded-0 mt-3"></div>
+
+        <div class="col-sm-12 mt-4 ">
+            <input type="submit" style="background-color: darkred; border:none; color:white;" class="w-100 p-2 "></div>
+    </div>
+    
+
+
+</form>
+
+
+
+
+    {% endfor %}
+    {% endblock %}
+    
+</body>
+</html>

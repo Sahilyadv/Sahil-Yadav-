@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'adminzone.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block mainadmin %}
+
+    <h1 class="text-center fw-bold mt-4">Add Notification Here</h1>
+<form action="{% url 'notisave' %}" class="mt-5" method="post">
+    {% csrf_token %}
+<div class="row border bg-light p-4 mt-4 shadow-lg">
+<div class="col-sm-12"> <input type="text" name="notim" class="form-control mt-3 border-dark rounded-0" placeholder="Add text"></div>
+
+<div class="col-sm-12"><input type="submit" value="add notification " class="form-control mt-3 border-dark rounded-0" style="background-color: darkred;color:white;"></div>
+
+
+</div>
+
+</form>
+
+
+    {% endblock %}
+</body>
+</html>

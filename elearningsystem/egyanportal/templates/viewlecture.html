@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        {% block student %}
+
+        <div class="row mt-5 mx-auto "><h1>This is lecture page</h1></div>
+
+        <div class="row mt-2">
+            <div class="col-sm-12 pt-5">
+                <table class="table text-center text-light"
+                    style="background-color: darkred; color:white;">
+                    <tr>
+                    <th style="color:white;">id</th>
+                    <th style="color:white;">Program</th>
+                    <th style="color:white;">Branch</th>
+                    <th style="color:white;">Year</th>
+                    <th style="color:white;">Subject</th>
+                    <th style="color:white;">File name</th>
+                    <th style="color:white;">Uploaded file </th>
+                </tr>
+                    {% for p in papaji %}
+                    <tr>
+                        <td>{{p.id}}</td>
+                        <td>{{p.program}}</td>
+                        <td>{{p.Branch}}</td>
+                        <td>{{p.Year}}</td>
+                        <td>{{p.Subject}}</td>
+                        <td>{{p.file_name}}</td>
+                        <td><a href="{{p.Link.url}}">Read More</a></td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+
+            </div>
+
+        </div>
+
+        {% endblock %}
+
+    </body>
+</html>

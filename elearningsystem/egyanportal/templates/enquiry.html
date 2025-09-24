@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block student %}
+
+    <div class="row mt-5">
+<div class="col-sm-12 pt-5" >
+<table class="table text-center text-light" style="background-color: darkred; color:white;" >
+    <tr>
+<th>Sr. No.</th>
+<th>Name</th>
+<th>Address</th>
+<th>Contact</th>
+<th>Email Address</th>
+<th>Enquery Text</th>
+<th>Enquery Date</th>
+</tr>
+
+
+    {% for p in en %}
+    <tr>
+        <td>{{p.id}}</td>
+        <td>{{p.program}}</td>
+        <td>{{p.Branch}}</td>
+        <td>{{p.Year}}</td>
+        <td>{{p.subject}}</td>
+        <td>{{p.file_name}}</td>
+        <td><a href="{{p.New_file.url}}">Read More</a></td>
+    </tr>
+    {% endfor %}
+
+
+
+
+
+
+</table>
+
+
+
+
+
+</div>
+
+
+    </div>
+
+
+    {% endblock %}
+    
+</body>
+</html>

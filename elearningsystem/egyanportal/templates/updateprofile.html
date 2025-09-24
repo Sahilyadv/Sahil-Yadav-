@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block student %}
+<h1 class="text-center mt-3">Update profile</h1>
+<div class="row m-4">
+<div class="col-sm-12 ">
+    <div class="card mb-3" style="max-width:900px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'img/logo1.png' %}" height="200px" class="img-fluid rounded-start text-center" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Name:-Ankit yadav</h5>
+              <div class="row">
+             <div class="col-sm-6 mt-2"><h5 class="card-title">Enrollment Number:-2103450100016</h5></div>
+             <div class="col-sm-6"> <h5 class="card-title">Course:-Btech</h5></div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mt-2"><h5 class="card-title">Branch:-Computer science and engg</h5></div>
+                <div class="col-sm-6"> <h5 class="card-title">Year:- 4th</h5></div>
+   
+                 </div>
+                 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+
+</div>
+
+<div class="row m-4">
+<div class="col-sm-12 text-end">
+<button class="btn mb-2 rounded-0 " style="background-color: darkred; color:white;">update profile</button>
+
+<table class="table text-center border border-dark">
+<tr > 
+<th>Enrollment N0:-</th>
+<td>2103450100016</td>
+
+<tr > 
+    <th>Name:-</th>
+    <td>Ankit yadav</td>
+    
+    </tr>
+    <tr > 
+        <th>Father:-</th>
+        <td>xyz</td>
+        
+        </tr>
+        <tr > 
+            <th>Mother:-</th>
+            <td>xyz's wife</td>
+            
+            </tr>
+
+    <tr > 
+        <th>Course:-</th>
+        <td>Btech</td>
+        
+        </tr>
+        
+        <tr > 
+            <th>Branch:-</th>
+            <td>computer science</td>
+            
+            </tr>
+
+            <tr > 
+                <th>Year:-</th>
+                <td>4th year</td>
+                
+                </tr>
+                
+                <tr > 
+                    <th>Address:-</th>
+                    <td>BBD</td>
+                    
+                    </tr>
+
+                    <tr > 
+                        <th>Mobile:-</th>
+                        <td>9936591049</td>
+                        
+                        </tr>
+                        
+                    <tr > 
+                        <th>Email:-</th>
+                        <td>9936591049</td>
+                        
+                        </tr>
+
+
+
+</table>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+{% endblock %}
+</body>
+</html>

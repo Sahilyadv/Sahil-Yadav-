@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends 'adminzone.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block mainadmin %}
+
+    <h1 class="text-center fw-bold fs-">Upload Assesment Here</h1>
+    <form action="">
+        <div class="row border bg-light p-4 mt-4 shadow-lg" >
+            <div class="col-md-6">
+                <p>Select Program *</p>
+        <select name="" id="" class="form-control rounded-0 border-dark">
+     <option value="">--select program</option>
+     <option value=""></option>
+        </select>
+
+            </div>
+            <div class="col-md-6">
+                <p>Select Branch *</p>
+                <select name="" id="" class="form-control rounded-0 border-dark">
+                    <option value="">--select branch</option>
+                    <option value=""></option>
+                       </select>
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Select year *</p>
+                <select name="" id="" class="form-control rounded-0 border-dark">
+                    <option value="">--select program</option>
+                    <option value=""></option>
+                       </select>
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Enter your Subject *</p>
+                <input type="text" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Enter your Filename *</p>
+                <input type="text" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Upload File *</p>
+                <input type="file" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-12 mt-5">
+                <input type="submit" class="btn w-100 rounded-0 p-2" style="background-color: darkred;">
+   
+                
+            </div>
+        </div>
+    </form>
+    
+    
+    {% endblock %}
+</body>
+</html>

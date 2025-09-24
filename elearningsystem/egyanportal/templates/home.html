@@ -1,0 +1,354 @@
+{% extends 'layout.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    
+{% block main %}
+<!--crousel start -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/slider.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--crousel ends -->
+  <!--Announcement start-->
+  <div class="row " style="height:75px;">
+    <div class="col-md-12 bg-warning">
+      <marquee scrollamount="12" onmousemove="this.stop()" onmouseout="this.start()">
+           <div class="box ">
+        <div class="b1 ">
+          <p class="ab-box me-3">The portal is easy to access &amp; highly user <br>friendly for the students &amp; study centres.</p>
+  
+        </div>
+        <div class="b1 "><p class="ab-box me-3 ps-2">The portal is easy to access &amp; highly user <br>friendly for the students &amp; study centres.</p></div>
+        <div class="b1 "><p class="ab-box me-3">The portal is easy to access &amp; highly user <br>friendly for the students &amp; study centres.</p></div>
+      </div>
+    </marquee>
+   
+    </div>
+  </div>
+  
+  <!--Announcement ends-->
+  </div>
+  
+  <!--about start -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="pt-5 px-5 fw-bold"><span>About </span> <span style="color:darkred;">NOU e-Gyan Portal</span></h2>
+        </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-md-7 pt-5 text-justify"><span class="fw-bold">Nalanda Open University </span>welcomes all our students, faculties & study centres to the very new & innovative online study portal<span class="fw-bold"> NOU e-Gyan</span>. The portal is a unique initiative by Hon'ble Vice-Chancellor<span class="fw-bold"> Prof. (Dr.) K C Sinha</span>, which aims at providing online study material to the students of NOU.<br/><br/>
+    
+        The portal is accessible from any hook and corner of the world if the system allows the permission to its users. It is also fully secured and accessible 24 x 7 to its authorised users. It will resolve the academic issues such as E-content Distribution, Delivery, Tracking, Assessment, Progress Monitoring & Controlling of all stakeholders of the system i.e. students, teachers, study centre administrators as well as Nalanda Open University Admins when they are at a distance.
+        
+        </div>
+    <div class="col-md-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jVl8uLz8f9w?si=SIZubfo_FEz1tpC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </div>
+    
+    
+    </div>
+     
+    
+     </div>
+    
+  
+  
+  
+  <!--about ends-->
+  <!--user of the portal start -->
+<div class="container-fluid mt-5">
+<div class="row">
+  <div class="col-md-12 " style="background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.301)), url(../static/img/img4.jpg); height: 600px; background-repeat: no-repeat; background-size: cover;">
+       <div class="row m-5"><div class="col-md-12"> <h1><span class="fw-bold text-dark">USER</span> <span class="fw-bold" style="color:darkred;">OF THE PORTAL</span></h1> </div></div>
+
+  </div>
+</div>
+
+</div>
+
+   <!--user of the portal start -->
+
+   <!--services start-->
+   <div class="container-fluid">
+<div class="container">
+
+<div class="row mt-5 mx-5">
+<div class="col-md-12"><h1><span class="fw-bold" style="color: black;">STUDENT</span> <span class="fw-bold " style="color:darkred">SERVICES</span></h1></div>
+
+</div>
+
+<div class="row mx-5 mt-5">
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+  <img src="../static/img/registration.jpg" class="card-img-top" alt="...">
+  <div class="card-body" >
+<a href="#" class="btn w-100" style="background-color:darkred; color:white; ">login</a>
+  </div>
+</div>
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+    <img src="../static/img/dashboard.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100 " style="background-color:darkred; color:white; ">Dashboard</a>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+    <img src="../static/img/online-courses.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100 " style="background-color:darkred; color:white; font-size: small; ">Self Learning Material (SLM)</a>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+
+  <div class="card" >
+    <img src="../static/img/e-lectures.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100" style="background-color:darkred; color:white; ">e-Books</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+  <img src="../static/img/self-assessment.svg" class="card-img-top" alt="...">
+  <div class="card-body" >
+<a href="#" class="btn w-100" style="background-color:darkred; color:white; ">Self-Assessment Tools</a>
+  </div>
+</div>
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+    <img src="../static/img/performance.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100 " style="background-color:darkred; color:white; ">Performance</a>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+  <div class="card" >
+    <img src="../static/img/feedback.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100" style="background-color:darkred; color:white; ">Feedback</a>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3" style="height:350px; width:275px;">
+
+  <div class="card" >
+    <img src="../static/img/course-catlog.jpg" class="card-img-top" alt="...">
+    <div class="card-body" >
+  <a href="#" class="btn w-100" style="background-color:darkred; color:white; ">Courses-Catalogue</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+   
+   <!--services end-->
+
+   <!--Administrative services start -->
+<div class="container-fluid " style="background-color: rgb(204,204,204);" >
+  <div class="container">
+<div class="row" >
+<div class="col-md-12 "  style=" height: 450px;">
+  <div class="row mt-3 mx-4 p-0" >
+    <div class="col-md-12 p-0 mx-5"><h2><span class="fw-bold" style="color:black; ">Administrative </span> <span class="fw-bold" style="color:darkred; ">Setup</span></h2></div>
+    
+    </div>
+    <div class="row mx-5">
+   <div class="col-md-3 ms-3" style="background-color: white; height:300px; width:260px;  border-radius: 3%;">
+     <div class="row">
+     <div class="col-md-12 text-center mt-4" >
+      <img src="../static/img/vc.jpg" height="150px" width="130px" alt="" style="border:2px solid darkred; border-radius: 100%;" class="mt-2">
+      <h6 class="fw-bold fs-5 mt-3"><span style="color:darkred;">Prof. (Dr.) K. C. Sinha </span></h6>
+      <p style="color:rgb(71, 67, 67)">VICE CHANCELLOR</p>
+     </div>
+
+     </div>
+
+   </div>
+   <div class="col-md-3 ms-3" style="background-color: white; height:300px; width:260px;  border-radius: 3%;">
+    <div class="row">
+      <div class="col-md-12 text-center mt-4" >
+       <img src="../static/img/pvc.jpg" height="150px" width="130px" alt="" style="border:2px solid darkred; border-radius: 100%;" class="mt-2">
+       <h6 class="fw-bold fs-5 mt-3"><span style="color:darkred;">Prof. (Dr.) Sanjoy Kumar </span></h6>
+       <p style="color:rgb(71, 67, 67)">PRO VICE CHANCELLOR</p>
+      </div>
+ 
+      </div>
+ 
+
+
+   </div>
+   <div class="col-md-3 ms-3" style="background-color: white; height:300px; width:260px;  border-radius: 3%;">
+    <div class="row">
+      <div class="col-md-12 text-center mt-4" >
+       <img src="../static/img/registrar1.jpeg" height="150px" width="130px" alt="" style="border:2px solid darkred; border-radius: 100%;" class="mt-2">
+       <h6 class="fw-bold fs-5 mt-3"><span style="color:darkred;">Dr. Md. Habibur Rahman </span></h6>
+       <p style="color:rgb(71, 67, 67)">REGISTRAR</p>
+      </div>
+ 
+      </div>
+ 
+
+   </div>
+   <div class="col-md-3 ms-3" style="background-color: white; height:300px; width:260px;  border-radius: 3%;">
+    <div class="row">
+      <div class="col-md-12 text-center mt-4" >
+       <img src="../static/img/examreg.jpg" height="150px" width="130px" alt="" style="border:2px solid darkred; border-radius: 100%;" class="mt-2">
+       <h6 class="fw-bold fs-5 mt-3"><span style="color:darkred;">Dr. Neelam Kumari </span></h6>
+       <p style="color:rgb(71, 67, 67)">REGISTRAR (Exam)</p>
+      </div>
+ 
+      </div>
+ 
+
+   </div>
+
+  </div>
+    
+    
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+      <!--Administrative services end -->
+
+      <!--our courses start -->
+<div class="container">
+<div class="row mt-4">
+  <div class="col-md-12 p-0 mx-5"><h2><span class="fw-bold" style="color:black; ">OUR  </span> <span class="fw-bold" style="color:darkred; ">Courses</span></h2></div>
+</div>
+<div class="row">
+<div class="col-md-12 text-end">
+<button class=" btn btn-warning ">View All Courses</button>
+
+</div>
+
+<div class="row text-center pt-5" style="margin-left: 120px;">
+<div class="col-sm-4 " style="height: 350px; width:350px;">
+
+
+  <div class="card p-3 border-0 shadow-lg rounded-0"  >
+    <img src="../static/img/bba.png" class="card-img-top rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Bachlor In Bussiness Administration (BBA)</h5>
+
+      <p ><i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+      </p>
+      
+    </div>
+  </div>
+
+
+
+</div>
+<div class="col-sm-4 " style="height: 350px; width:350px;">
+
+
+  <div class="card p-3 border-0 shadow-lg rounded-0"  >
+    <img src="../static/img/mca.png" class="card-img-top rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Master In Computer Application(MCA)</h5>
+
+      <p ><i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+      </p>
+      
+    </div>
+  </div>
+
+
+
+</div>
+<div class="col-sm-4 " style="height: 350px; width:350px;">
+
+
+  <div class="card p-3 border-0 shadow-lg rounded-0"  >
+    <img src="../static/img/bca.png" class="card-img-top rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Bachlor In Computer Application (BCA)</h5>
+
+      <p ><i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+        <i class="fa-solid fa-star" style="color: #ffa500;"></i>
+      </p>
+      
+    </div>
+  </div>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+
+     
+
+
+
+
+      <!--our courses ends-->
+  
+{% endblock %}
+</body>
+</html>

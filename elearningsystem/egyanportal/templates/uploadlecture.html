@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends 'adminzone.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block mainadmin %}
+
+    {% for p in papaji %}
+    <div class="alert alert-info mt-3" role="alert">
+        {{i}}
+      </div>
+
+
+    {% endfor %}
+
+
+    <h1 class="text-center fw-bold fs-">Upload Lectures Here</h1>
+    <form action="{% url 'lecturesave' %}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+
+        <div class="row border bg-light p-4 mt-4 shadow-lg" >
+            <div class="col-md-6">
+                <p>Select Program *</p>
+        <select name="program" id="" class="form-control rounded-0 border-dark">
+     <option value="">--select program</option>
+     <option value="B-tech">B-tech</option>
+     <option value="M-tech">M-tech</option>
+     <option value="Diploma">Diploma</option>
+     <option value="BCA">BCA</option>
+        </select>
+
+            </div>
+            <div class="col-md-6">
+                <p>Select Branch *</p>
+                <select name="Branch" id="" class="form-control rounded-0 border-dark">
+                    <option value="">--select branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="EE">EE</option>
+                    <option value="CE">CE</option>
+                    <option value="ME">ME</option>
+                       </select>
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Select year *</p>
+                <select name="Year" id="" class="form-control rounded-0 border-dark">
+                    <option value="">--select program</option>
+                    <option value="1">1st year</option>
+                    <option value="2">2nd year</option>
+                    <option value="3">3rd year</option>
+                    <option value="4">4th year</option>
+                       </select>
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Enter your lecture of Subject *</p>
+                <input type="text" name="Subject" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Enter your lecturename*</p>
+                <input type="text" name="file_name" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-6 mt-4">
+                <p>Upload lecture vedio link*</p>
+                <input type="url" name="Link" class="form-control rounded-0 border-dark">
+                
+            </div>
+            <div class="col-md-12 mt-5">
+                <input type="submit" class="btn w-100 rounded-0 p-2" style="background-color: darkred;">
+   
+                
+            </div>
+        </div>
+    </form>
+    
+    
+    {% endblock %}
+</body>
+</html>
